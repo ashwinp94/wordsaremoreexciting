@@ -4,22 +4,23 @@ let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the
 function addExcitement(theWordArray) {
 
     let buildMeUp = ""
+    let symbol = "?"
 
     for (let i = 0; i < theWordArray.length; i++) {
         // "sentence[i]" can also be "thewordarray[i]"
         if (i % 12 === 3) {
-            buildMeUp += sentence[i] + "! ";
+            buildMeUp += (`${theWordArray[i]}${symbol} `);
             console.log(buildMeUp);
         }
         else if (i % 12 === 6) {
-            buildMeUp += sentence[i] + "! ";
+            buildMeUp += (`${theWordArray[i]}${symbol} `);
             console.log(buildMeUp);
         }
         else if (i % 12 === 9) {
-            buildMeUp += sentence[i] + "! ";
+            buildMeUp += (`${theWordArray[i]}${symbol} `);
             console.log(buildMeUp);
         } else {
-            buildMeUp += sentence[i] + " ";
+            buildMeUp += (`${theWordArray[i]} `);
             console.log(buildMeUp);
         }
     }
